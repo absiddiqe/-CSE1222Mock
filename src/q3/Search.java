@@ -8,7 +8,7 @@ public class Search {
         String WordToSearch = args[0];
 
         for (int i = 1; i < args.length; i++) {
-            String filename = args[1];
+            String filename = args[i];
             try (Scanner scanner = new Scanner(new File(filename))) {
 
                 while (scanner.hasNextLine()) {
